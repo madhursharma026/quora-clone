@@ -1,0 +1,15 @@
+.mainContainer {
+    background: url('https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png');
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+    transition-property: background-image;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in-out;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

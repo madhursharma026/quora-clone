@@ -1,0 +1,39 @@
+.ContainerWidth {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* .scrollPosition::-webkit-scrollbar {
+    display: none;
+} */
+
+@media (max-width: 576px) {
+    .h5CustomFont {
+        font-size: 1.05rem;
+    }
+
+    .customFont {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .h5CustomFont {
+        font-size: 1.1530rem;
+    }
+
+    .customFont {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .h5CustomFont {
+        font-size: 1.25rem;
+    }
+
+    .customFont {
+        font-size: 16px;
+    }
+}
