@@ -21,7 +21,7 @@ export default function Home() {
                             <MoreContent />
                             <br /><br />
                         </div>
-                        <div className="col-lg-4 col-md-5 p-0">
+                        <div className="col-lg-4 col-md-5 p-0 d-md-block d-none">
                             <div className="card" style={{ height: '500px', borderRadius: '0' }}>
                                 <div className="card-body">
                                     <h6>Related questions</h6>

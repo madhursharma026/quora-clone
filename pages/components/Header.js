@@ -48,16 +48,16 @@ export default function Header() {
 
                 <div className='d-lg-none d-block'>
                     <div className="row p-2 text-center" style={{ background: '#A91F00' }}>
-                        <div className="col-sm-2 col-3">
+                        <div className="col-sm-2 col-md-3 col-4">
                             <Link className="navbar-brand" href="/">
                                 <img src="https://assets.fontsinuse.com/use-media/16896/upto-700xauto/56702dda/1/png/Color.png" alt="#ImgNotFound" style={{ maxWidth: '100px', width: '100%' }} />
                             </Link>
                         </div>
-                        <div className="col-sm-7 col-6">
+                        <div className="col-sm-8 col-md-6 col-6">
                             <TextField className={`w-100`} style={{ border: '2px solid white', borderRadius: '10px' }} id="outlined-start-adornment" size="small" InputProps={{ style: { color: 'white' }, startAdornment: <InputAdornment position="start"><i className="fa fa-search text-white" /></InputAdornment> }} />
                         </div>
-                        <div className="col-md-2 col-3">
-                            <button type="button" className="btn bg-transparent text-white"><b><i className="fa fa-plus-circle fs-5" /> &nbsp; Add</b></button>
+                        <div className="col-2">
+                            <button type="button" className="btn bg-transparent text-white"><b><i className="fa fa-plus-circle fs-5" /> &nbsp; <span className="d-md-inline-block d-none">Add</span> </b></button>
                         </div>
                     </div>
                     <div className="row">
