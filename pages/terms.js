@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./components/Header";
-import { useTheme } from "./components/ThemeContext.js";
 import styles from "../styles/Header.module.css";
 import GlobalStyle from "../styles/global.module.css";
 import { useTheme } from "./components/ThemeContext.js";
