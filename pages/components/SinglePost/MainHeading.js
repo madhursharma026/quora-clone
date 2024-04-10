@@ -1,4 +1,4 @@
-import { useTheme } from "../ThemeContext.js";
+import { useTheme } from "../../../utils/ThemeContext.js";
 import GlobalStyle from '../../../styles/global.module.css'
 import styles from "../../../styles/SinglePost/SinglePost.module.css";
 

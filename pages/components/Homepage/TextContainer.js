@@ -1,4 +1,4 @@
-import { useTheme } from "../ThemeContext.js";
+import { useTheme } from "../../../utils/ThemeContext.js";
 import styles from "../../../styles/Homepage/Homepage.module.css";
 
 export default function TextContainer() {

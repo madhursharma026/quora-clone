@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Posts from "./components/Homepage/Posts";
 import Spaces from "./components/Homepage/Spaces";
 import GlobalStyle from "../styles/global.module.css";
-import { useTheme } from "./components/ThemeContext.js";
+import { useTheme } from "../utils/ThemeContext.js";
 import styles from "../styles/Homepage/Homepage.module.css";
 import TextContainer from "./components/Homepage/TextContainer";
 
