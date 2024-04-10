@@ -1,12 +1,16 @@
 import React from "react";
 import Header from "./components/Header";
+import { useTheme } from "./ThemeContext.js";
+import styles from "../styles/Header.module.css";
 import GlobalStyle from "../styles/global.module.css";
 
 export default function Terms() {
+    const { darkMode, toggleDarkMode } = useTheme();
+
     return (
-        <>
+        <div className={darkMode ? `${styles.darkThemeContainer}` : `${styles.lightThemeContainer}`}>
             <Header />
-            <div className={`${GlobalStyle.ContainerWidth} mt-5 pt-5`}>
+            <div className={`${GlobalStyle.ContainerWidth} ${darkMode ? `${styles.darkThemeBtn}` : `btn-light`} mt-5 pt-5`}>
                 <br className="d-lg-none d-block" /><br className="d-lg-none d-block" /><br className="d-sm-none d-block" />
                 <h5>Terms of Service</h5>
                 <hr />
@@ -101,24 +105,24 @@ export default function Terms() {
                 </p>
                 <p><b>4.4 Restricted Uses. </b>
                     You represent and warrant that you will not:
-                    <ul>
-                        <li>
-                            Access, search or collect data from the Quora Platform (through automated or other means, including artificial intelligence or machine learning) (1) to create derivative works of Our Content and Materials; (2) to train or develop any AI, large language models or machine learning algorithms on Our Content or Materials; (3) to create any service competitive to the Quora Platform; or (4) for other commercial purposes except as expressly permitted by these Terms of Service or the written consent of Quora.
-                        </li>
-                        <li>
-                            Use Quora in any manner that could interfere with, disable, disrupt, overburden, or otherwise impair the Quora Platform;
-                        </li>
-                        <li>
-                            Reverse assemble, reverse compile, decompile any part of the Quora Platform;
-                        </li>
-                        <li>
-                            Upload, transmit, or distribute to or through the Quora Platform any viruses, worms, malicious code, or other software intended to interfere with the Quora Platform, including its security-related features; or
-                        </li>
-                        <li>
-                            Gain access to (or attempt to gain access to) another user’s account or any non-public portions of the Quora Platform, including the computer systems or networks connected to or used together with the Quora Platform.
-                        </li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>
+                        Access, search or collect data from the Quora Platform (through automated or other means, including artificial intelligence or machine learning) (1) to create derivative works of Our Content and Materials; (2) to train or develop any AI, large language models or machine learning algorithms on Our Content or Materials; (3) to create any service competitive to the Quora Platform; or (4) for other commercial purposes except as expressly permitted by these Terms of Service or the written consent of Quora.
+                    </li>
+                    <li>
+                        Use Quora in any manner that could interfere with, disable, disrupt, overburden, or otherwise impair the Quora Platform;
+                    </li>
+                    <li>
+                        Reverse assemble, reverse compile, decompile any part of the Quora Platform;
+                    </li>
+                    <li>
+                        Upload, transmit, or distribute to or through the Quora Platform any viruses, worms, malicious code, or other software intended to interfere with the Quora Platform, including its security-related features; or
+                    </li>
+                    <li>
+                        Gain access to (or attempt to gain access to) another user’s account or any non-public portions of the Quora Platform, including the computer systems or networks connected to or used together with the Quora Platform.
+                    </li>
+                </ul>
                 <p><b>4.5 Permission to Crawl. </b>
                     If you operate a search engine, subject to the Restricted Uses section above, we conditionally grant permission to crawl the Quora Platform subject to the following rules: (1) you must use a descriptive user agent header; (2) you must follow robots.txt at all times; (3) your access must not adversely affect any aspect of the Quora Platform’s functioning; (4) you must make it clear how to contact you, either in your user agent string, or on your website if you have one.
                 </p>
@@ -384,7 +388,6 @@ export default function Terms() {
                     Feel free to contact us through quora.com/contact with any questions about these Terms. Quora is a Delaware corporation, located at 605 Castro Street, Mountain View, CA 94041.
                 </p>
             </div>
-        </>
+        </div>
     );
 }
-

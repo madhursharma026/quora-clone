@@ -1,5 +1,20 @@
-.headerContainer {
+.darkThemeContainer {
+    background: #212529;
+    color: white;
+}
+
+.lightThemeContainer {
+    background: #F1F2F2;
+}
+
+.darkThemeHeaderContainer {
+    box-shadow: rgba(0, 0, 0, 0.952) 0px 2px 8px 0px;
+    background: #212529;
+}
+
+.lightThemeHeaderContainer {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
 }
 
 .activeHeaderItems {
@@ -7,16 +22,30 @@
 }
 
 .activeheaderLinks {
+    font-size: 25px;
     color: #B92B27;
 }
 
-.headerLinks {
+.darkThemeHeaderLinks {
     font-size: 25px;
+    color: #212529;
+}
+
+.lightThemeHeaderLinks {
+    font-size: 25px;
+    color: white;
 }
 
 @media (min-width: 992px) {
-    .headerLinks:hover {
+    .darkThemeHeaderLinks:hover {
+        font-size: 25px;
         background: #F7F7F8;
+    }
+
+    .lightThemeHeaderLinks:hover {
+        font-size: 25px;
+        background: #2d3033;
+        color: white;
     }
 }
 
@@ -24,14 +53,14 @@
     width: 300px;
 }
 
-@media (max-width: 1085px) {
+@media (max-width: 1100px) {
     .responsiveInput {
         max-width: 250px;
     }
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1045px) {
     .responsiveInput {
-        max-width: 200px;
+        max-width: 190px;
     }
 }

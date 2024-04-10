@@ -1,0 +1,21 @@
+.darkThemeContainer {
+    background: #212529;
+}
+
+.lightThemeContainer {
+    background: #F1F2F2;
+}
+
+.darkThemeBtn {
+    background: #424649;
+    color: white;
+}
+
+.darkThemeBtn:hover {
+    background: #323538;
+    color: white;
+}
+
+.lightThemeBtn {
+    background: #F1F2F2;
+}

@@ -7,8 +7,8 @@ export default function Login() {
     return (
         <div className={`${styles.mainContainer} ${styles.hideScrnAfter400PX}`} style={{ justifyContent: 'center', alignContent: 'center' }}>
             <div className="mx-md-0 mx-3 my-sm-0 my-5">
-                <div class="card" style={{ maxWidth: '700px', margin: 'auto' }}>
-                    <div class="card-body py-0">
+                <div className="card" style={{ maxWidth: '700px', margin: 'auto' }}>
+                    <div className="card-body py-0">
                         <div className="pt-5">
                             <div className="text-center">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Quora_logo_2015.svg/1200px-Quora_logo_2015.svg.png" alt="#ImgNotFound" width="180px" height="50px" />
