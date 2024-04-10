@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { useTheme } from "@/pages/ThemeContext.js";
+import { useTheme } from "../ThemeContext.js";
 import GlobalStyle from "../../../styles/global.module.css";
 import styles from "../../../styles/Homepage/Homepage.module.css";
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useTheme } from "@/pages/ThemeContext.js";
+import React from "react";
+import { useTheme } from "../ThemeContext.js";
 import GlobalStyle from '../../../styles/global.module.css';
 import styles from "../../../styles/SinglePost/SinglePost.module.css";
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";

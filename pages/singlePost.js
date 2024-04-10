@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "./components/Header";
-import { useTheme } from "./ThemeContext.js";
 import GlobalStyle from "../styles/global.module.css";
+import { useTheme } from "./components/ThemeContext.js";
 import MainHeading from "./components/SinglePost/MainHeading";
 import MoreContent from "./components/SinglePost/MoreContent";
 import styles from "../styles/SinglePost/SinglePost.module.css";
